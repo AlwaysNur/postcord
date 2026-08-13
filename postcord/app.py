@@ -66,9 +66,7 @@ async def track(
 
         # reply using intercation.response, dear future nur: ephemeral means "Only visible to you" btw
         await interaction.response.send_message(
-            content=(
-                f"✅ Created a tracking thread for **{nice_name}** ({tracking_code}) via {emoji} {courier_nice_name}."
-            ),
+            f"✅ Created a tracking thread for **{nice_name}** ({tracking_code}) via {emoji} {courier_nice_name}.",
             ephemeral=True
         ) 
     else:
