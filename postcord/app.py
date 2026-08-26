@@ -59,18 +59,18 @@ async def track(
         
         await thread.send(
             content=(
-                f"📦 Tracking **{nice_name}** ({tracking_code}) with {emoji} {courier_nice_name} {emoji}.\n"
+                f"Tracking **{nice_name}** ({tracking_code}) with {emoji} {courier_nice_name} {emoji}.\n"
                 "Tracking updates with appear here."
             )
         )
 
         # reply using intercation.response, dear future nur: ephemeral means "Only visible to you" btw
         await interaction.response.send_message(
-            f"✅ Created a tracking thread for **{nice_name}** ({tracking_code}) via {emoji} {courier_nice_name}.",
+            f"Created a tracking thread for **{nice_name}** ({tracking_code}) via {emoji} {courier_nice_name}.",
             ephemeral=True
         ) 
     else:
-        await interaction.response.send_message("❌ Unable to create thread, is this a DM?") # reply using intercation.response, dear future nur: ephemeral means "Only visible to you" btw
+        await interaction.response.send_message("Unable to create thread, is this a DM?") # reply using intercation.response, dear future nur: ephemeral means "Only visible to you" btw
     
 
 client.run(discord_token)
