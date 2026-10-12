@@ -54,12 +54,12 @@ async def track(
             name=f"{nice_name}",
             auto_archive_duration=60,
             type=discord.ChannelType.public_thread,
-            reason=f"Creating thread to track {tracking_code} VIA {emoji} {courier_nice_name} {emoji}!"
+            reason=f"Creating thread to track {tracking_code} VIA {courier_nice_name} {emoji}!"
         )
         
         await thread.send(
             content=(
-                f"Tracking **{nice_name}** ({tracking_code}) with {emoji} {courier_nice_name} {emoji}.\n"
+                f"Tracking **{nice_name}** ({tracking_code}) with {courier_nice_name} {emoji}.\n"
                 "Tracking updates with appear here."
             )
         )
